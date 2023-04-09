@@ -1,0 +1,50 @@
+<div class="banner__container two-up-hero" attr="data.main.attributes" ko-style="data.main.style" css="data.main.css">
+    <div class="banner__container--left">
+        <div class="banner__content">
+            <div class="banner__subtitle--wrapper">
+                <svg version="1.1" viewBox="0 0 6.17795 13.4" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="banner__divider">
+                    <path d="M6.16667 0.166297L0.391949 13.388L0 13.2051L5.77472 0.00951717L6.16667 0.166297Z"/>
+                </svg>
+                <h3 class="banner__subtitle" ko-style="data.left_subtitle.style" html="data.left_subtitle.html"></h3>
+            </div>
+            <h2 class="banner__title" ko-style="data.left_title.style" html="data.left_title.html"></h2>
+            <p class="banner__description" ko-style="data.left_description.style" html="data.left_description.html"></p>
+            <div class="banner__button">
+                <a if="data.left_link.attributes().href" attr="data.left_link.attributes" css="data.left_link.css">
+                    <span html="data.left_link_text.html"></span>
+                </a>
+                <div ifnot="data.left_link.attributes().href" css="data.left_empty_link.css">
+                    <span html="data.left_link_text.html"></span>
+                </div>
+            </div>
+        </div>
+        <picture class="banner__image">
+            <img if="data.left_image.attributes().src"
+                 attr="data.left_image.attributes"/>
+        </picture>
+    </div>
+    <div class="banner__container--right">
+        <div class="banner__content">
+            <div class="banner__subtitle--wrapper">
+                <svg version="1.1" viewBox="0 0 6.17795 13.4" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="banner__divider">
+                    <path d="M6.16667 0.166297L0.391949 13.388L0 13.2051L5.77472 0.00951717L6.16667 0.166297Z"/>
+                </svg>
+                <h3 class="banner__subtitle" ko-style="data.right_subtitle.style" html="data.right_subtitle.html"></h3>
+            </div>
+            <h2 class="banner__title" ko-style="data.right_title.style" html="data.right_title.html"></h2>
+            <p class="banner__description" ko-style="data.right_description.style" html="data.right_description.html"></p>
+            <div class="banner__button">
+                <a if="data.right_link.attributes().href" attr="data.right_link.attributes" css="data.right_link.css">
+                    <span html="data.right_link_text.html"></span>
+                </a>
+                <div ifnot="data.right_link.attributes().href" css="data.right_empty_link.css">
+                    <span html="data.right_link_text.html"></span>
+                </div>
+            </div>
+        </div>
+        <picture class="banner__image">
+            <img if="data.right_image.attributes().src"
+                 attr="data.right_image.attributes"/>
+        </picture>
+    </div>
+</div>
