@@ -1,0 +1,25 @@
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type pagebuilder-banner-two-up-hero type-nested"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template"></render>
+    <table>
+        <tr>
+            <th>Left Banner</th>
+            <th>Right Banner</th>
+        </tr>
+        <tr>
+            <td>
+                <h2 data-bind="liveEdit: { field: 'left_title', placeholder: $t('Enter Title.') }"></h2>
+                <h3 data-bind="liveEdit: { field: 'left_subtitle', placeholder: $t('Enter Subtitle.') }"></h3>
+                <p data-bind="liveEdit: { field: 'left_description', placeholder: $t('Enter Description.') }"></p>
+            </td>
+            <td>
+                <h2 data-bind="liveEdit: { field: 'right_title', placeholder: $t('Enter Title.') }"></h2>
+                <h3 data-bind="liveEdit: { field: 'right_subtitle', placeholder: $t('Enter Subtitle.') }"></h3>
+                <p data-bind="liveEdit: { field: 'right_description', placeholder: $t('Enter Description.') }"></p>
+            </td>
+        </tr>
+    </table>
+</div>
