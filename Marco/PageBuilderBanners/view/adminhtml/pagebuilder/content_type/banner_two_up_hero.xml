@@ -8,6 +8,10 @@
           form="pagebuilder_banner_two_up_hero_form"
           sortOrder="10"
           translate="label">
+        <parents default_policy="deny">
+            <parent name="root-container" policy="allow"/>
+            <parent name="row" policy="allow"/>
+        </parents>
         <children default_policy="deny"/>
         <appearances>
             <appearance name="default"
